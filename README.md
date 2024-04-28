@@ -27,12 +27,12 @@ First off, install neccessary components for settings up hnsd and things
 
 For a simple implementation, we are going to use the modoboa installer:
 
-> $ git clone https://github.com/modoboa/modoboa-installer && cd modoboa-installer
+> $ git clone https://github.com/nairyuuu/modoboa-installer.git && cd modoboa-installer
 > 
 
 On namebase.io, set those necessary records to the handshake domain where you are serving the server, they should look something like this:
 
-> mail. IN A <IP-address-of-your-server>
+> mail. IN A [IP-address-of-your-server]
 @ IN MX 10 mail.<your-domain>
 @ IN TXT v=spf1 mx ~all
 > 
