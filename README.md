@@ -34,9 +34,9 @@ On namebase.io, set those necessary records to the handshake domain where you ar
 
 > mail. IN A [IP-address-of-your-server]
 > 
-@ IN MX 10 mail.<your-domain>
+>@ IN MX 10 mail.<your-domain>
 >
-@ IN TXT v=spf1 mx ~all
+>@ IN TXT v=spf1 mx ~all
 > 
 
 Start the installer by:
