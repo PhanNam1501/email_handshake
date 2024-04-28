@@ -1,6 +1,3 @@
-#!/bin/bash
-
-# Check if at least one argument is provided
 if [ $# -lt 1 ]; then
     echo "Usage: $0 <arg1> [arg2]"
     exit 1
@@ -18,7 +15,11 @@ fi
 if [ -n "$arg2" ]; then
     ./run.py "$arg2" "$arg1" &
     wait  # Wait for the Python script to finish
+    echo 'Modoboa installed successfully'
 fi
+# Add HDNS Nameserver
+
+echo 'nameserver 103.196.38.38' | sudo tee /etc/resolv.conf > /dev/null
 
 # Execute the openssl command to generate certificates
 openssl req -x509 -newkey rsa:4096 -sha256 -days 365 -nodes \
