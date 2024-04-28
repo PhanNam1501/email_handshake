@@ -11,6 +11,10 @@ Modoboa is a great webmail server that can be self-hostable, easily used.
 ## Quick setup:
 
 We wrote a script that automatically install modoboa with necessary components, allow users to deploy a Modoboa email server with just one single command
+First, clone this repo:
+```
+git clone https://github.com/nairyuuu/modoboa-installer.git
+```
 ```
 sudo chmod +x auto_run.sh
 sudo ./auto_run.sh <your-domain>
