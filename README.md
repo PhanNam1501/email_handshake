@@ -48,7 +48,7 @@ Then wait for the process to complete
 
 After the installation is complete, we are going to utilize HNSD for DNS resolution since the server cannot find Handshake domain on its own:
 ```
-git clone h[ttps://github.com/handshake-org/hnsd.git](https://github.com/handshake-org/hnsd.git) && cd hnsd
+git clone https://github.com/handshake-org/hnsd.git && cd hnsd
 ```
 
 And then build HNSD
