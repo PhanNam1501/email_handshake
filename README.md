@@ -1,6 +1,6 @@
 ## This is a modoboa installer that works with handshake domain
 
-Modoboa is a great webmail server that can be self-hostable, easily use.
+Modoboa is a great webmail server that can be self-hostable, easily used.
 
 ## Requirements:
 
@@ -18,7 +18,7 @@ sudo ./auto_run.sh <your-domain>
 
 ## Manual setup
 
-First off, install neccessary components for settings up hnsd and things
+First off, install neccessary components for settings up HNSD and things
 ```
 sudo apt-get upgrade && apt-get update
 ```
