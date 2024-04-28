@@ -15,6 +15,7 @@ First, clone this repo:
 ```
 git clone https://github.com/nairyuuu/modoboa-installer.git
 ```
+Then
 ```
 sudo chmod +x auto_run.sh
 sudo ./auto_run.sh <your-domain>
