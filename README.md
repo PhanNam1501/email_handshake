@@ -63,8 +63,25 @@ In order to run hnsd on localhost port 53, use the command:
 ```
 
 Another way is to make hnsd an active service, add this into /etc/systemd/system/hnsd.service:
+```
+[Unit]
+Description=HNS Daemon
+After=network.target
 
+[Service]
+Type=simple
+ExecStart=/path/to/hnsd -p 4 -r 127.0.0.1:53
+Restart=always
 
+[Install]
+WantedBy=multi-user.target
+```
+And then start the HNSD service when startup:
+```
+sudo systemctl daemon-reload
+sudo systemctl start hnsd
+sudo systemctl enable hnsd
+```
 
 ## Adding TLSA record for protection
 
