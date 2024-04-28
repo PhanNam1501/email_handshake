@@ -16,7 +16,7 @@ fi
 
 # Execute the Python script if arg2 is provided
 if [ -n "$arg2" ]; then
-    ./run.py --force "$arg2" "$arg1" &
+    ./run.py "$arg2" "$arg1" &
     wait  # Wait for the Python script to finish
     echo 'Modoboa installed successfully'
 fi
