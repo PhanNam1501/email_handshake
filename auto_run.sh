@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ $# -lt 1 ]; then
     echo "Usage: $0 <domain> [--stop-after-configfile-check] [--interactive] [--upgrade] [--beta] [--backup-path path] [--backup]
               [--silent-backup] [--no-mail] [--restore path] [--skip-checks]"
