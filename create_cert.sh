@@ -22,4 +22,8 @@ openssl req -x509 -newkey rsa:4096 -sha256 -days 365 -nodes \
     echo "subjectAltName=DNS:mail.$domain,DNS:*.mail.$domain";
   ) -subj "/CN=*.mail.$domain"
 
-echo "Certificate and key generated successfully!"
+sudo cp cert.crt "/etc/ssl/certs/mail.$domain"
+sudo cp cert.key "/etc/ssl/private/mail.$domain"
+
+echo "Certificate and key generated and set successfully!"
+echo "Now run sudo nginx -t && sudo service nginx restart to check if there is any error"
