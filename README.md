@@ -69,7 +69,7 @@ Another way is to make hnsd an active service, add this into /etc/systemd/system
 
 Execute the create_cert.sh file
 ```
-.create_cert.sh
+./create_cert.sh
 ```
 And then restart nginx
 ```
