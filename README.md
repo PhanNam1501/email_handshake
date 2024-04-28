@@ -81,10 +81,10 @@ Remember to add TLSA record like the output shown when the script is executed
 
 ## Finishing the set up and start configuring the server
 
-Now visit https://mail.<your domain> with the account admin:password to start configuring modoboa
+Now visit mail.<your domain> with the account admin:password to start configuring modoboa
 
 ## Adding domains to modoboa
 
 In the admin interface, go to Domains and add your domain
 
-Wait until the dns check is complete, after that you can create accounts and start using Modoboa
+Wait until the DNS check is complete, after that you can create accounts and start using Modoboa
