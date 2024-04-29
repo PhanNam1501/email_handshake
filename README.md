@@ -102,7 +102,7 @@ Remember to add TLSA record like the output shown when the script is executed
 
 ## Finishing the set up and start configuring the server
 
-Now visit mail.<your domain> with the account admin:password to start configuring modoboa
+Now visit mail.<your domain'> with the account admin:password to start configuring modoboa
 
 ## Adding domains to modoboa
 
