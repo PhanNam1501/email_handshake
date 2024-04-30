@@ -10,7 +10,7 @@ Modoboa is a great webmail server that can be self-hostable, easily used.
 
 ## Quick setup:
 
-We wrote a script that automatically install modoboa with necessary components like certificates and HNSD, allow users to deploy a Modoboa email server on handshake domain with just one single command. First, clone this repo:
+We wrote a script that automatically install modoboa with necessary components like certificates and things, allow users to deploy a Modoboa email server on handshake domain with just one single command. First, clone this repo:
 ```
 git clone https://github.com/nairyuuu/modoboa-installer.git && cd modoboa-installer
 ```
