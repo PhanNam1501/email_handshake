@@ -21,6 +21,9 @@ openssl req -x509 -newkey rsa:4096 -sha256 -days 365 -nodes \
     echo "basicConstraints=critical,CA:FALSE";
     echo "subjectAltName=DNS:mail.$domain,DNS:*.mail.$domain";
   ) -subj "/CN=*.mail.$domain"
+  
+echo "Please add the following TLSA record with the value:"
+echo -n "_443._tcp " && echo -n "3 1 1 " && openssl x509 -in cert.crt -pubkey -noout | openssl pkey -pubin -outform der | openssl dgst -sha256 -binary | xxd -p -u -c 32
 
 sudo cp cert.crt /etc/ssl/certs/mail.$domain.cert
 sudo cp cert.key /etc/ssl/private/mail.$domain.key
