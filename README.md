@@ -109,3 +109,4 @@ Now visit mail.<your-domain> with the account admin:password to start configurin
 In the admin interface, go to Domains and add your domain
 
 Wait until the DNS check is complete, after that you can create accounts and start using Modoboa
+
