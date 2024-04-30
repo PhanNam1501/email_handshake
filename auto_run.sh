@@ -41,8 +41,8 @@ echo "Please add the following TLSA record with the value:"
 echo -n "_443._tcp TLSA " && echo -n "3 1 1 " && openssl x509 -in cert.crt -pubkey -noout | openssl pkey -pubin -outform der | openssl dgst -sha256 -binary | xxd -p -u -c 32
 
 # Copy certificates to the specified locations with sudo
-sudo cp cert.crt "/etc/ssl/certs/mail.$arg1"
-sudo cp cert.key "/etc/ssl/private/mail.$arg1"
+sudo cp cert.crt /etc/ssl/certs/mail.$arg1.cert
+sudo cp cert.key /etc/ssl/private/mail.$arg1.key 
 
 # Check Nginx configuration and restart Nginx service
 nginx -t && sudo service nginx restart
