@@ -60,7 +60,10 @@ And then build HNSD
 ```
 ./autogen.sh && ./configure && make
 ```
-
+Change nameserver settings to HNSD
+```
+echo 'nameserver 127.0.0.1' | sudo tee /etc/resolv.conf > /dev/null
+```
 In order to run hnsd on localhost port 53, use the command:
 ```
 /path/to/hnsd -p 4 -r 127.0.0.1:53
