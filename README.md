@@ -94,7 +94,7 @@ sudo systemctl enable hnsd
 
 Execute the create_cert.sh file
 ```
-./create_cert.sh
+./create_cert.sh <your-domain>
 ```
 And then restart nginx
 ```
