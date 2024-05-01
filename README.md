@@ -45,7 +45,7 @@ mail. IN A [IP-address-of-your-server]
 
 Start the installer by:
 ```
-sudo ./run.py <your-domain> 
+sudo ./run.py [installer-option] <your-domain> 
 ```
 Then wait for the process to complete
 
@@ -112,4 +112,17 @@ Now visit mail.<your-domain> with the account admin:password to start configurin
 In the admin interface, go to Domains and add your domain
 
 Wait until the DNS check is complete, after that you can create accounts and start using Modoboa
+
+## Client-side E2E encryption recommmendation:
+
+We recommend using Mailvelope as it is fast, easy to use end-to-end encryption of email client
+
+On user's browser: install Mailvelope extension
+```
+https://chromewebstore.google.com/detail/mailvelope/
+https://addons.mozilla.org/vi/firefox/addon/mailvelope/
+https://microsoftedge.microsoft.com/addons/detail/mailvelope/
+```
+On opening the extension, go to Options -> Authorize Domains and add mail.<your-domain> as well as create public key for your account and receiver account
+
 
